@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { getMatches } from "@/api";
+import { getMatches } from "../..";
 import "./globals.css";
 
 const Brasileiro = async () => {

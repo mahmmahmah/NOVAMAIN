@@ -1,17 +1,17 @@
-import { filterLeague } from '@/api'
-import LeagueTable from '@/components/LeagueTable'
+import { filterLeague } from "../../../..";
+import LeagueTable from "@/components/LeagueTable";
 
-const SerieA= async () => {
-  const getSerieA= await filterLeague('Serie A')
+const SerieA = async () => {
+  const getSerieA = await filterLeague("Serie A");
   return (
-    <div className='w-[600px]'>
+    <div className="w-[600px]">
       {getSerieA.map((data) => (
         <div key={data.id}>
           <LeagueTable data={data} />
         </div>
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default SerieA
+export default SerieA;
